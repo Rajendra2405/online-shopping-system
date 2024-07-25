@@ -1,0 +1,40 @@
+<div class="list-container">
+    <h2>Cart Items</h2>
+    <ng-container *ngIf="cart$ | async as cartItems; else noItems">
+        <table *ngIf="cartItems.length > 0; else noItems">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartItems">
+                    <td>{{ item.name }}</td>
+                    <td>${{ item.price }}</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button (click)="decreaseQuantity(item)">-</button>
+                            <input type="number" [value]="item.quantity" readonly>
+                            <button (click)="increaseQuantity(item)">+</button>
+                        </div>
+                    </td>
+                    <td>${{ item.price * item.quantity }}</td>
+                    <td>
+                        <button (click)="removeFromCart(item.id)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary" *ngIf="cartItems.length > 0">
+            <p>Total: ${{ (totalPrice$ | async) }}</p>
+            <button routerLink="/checkout" class="checkout-button">Checkout</button>
+        </div>
+    </ng-container>
+    <ng-template #noItems>
+        <p class="empty-cart-message">Cart is empty.</p>
+    </ng-template>
+</div>

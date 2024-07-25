@@ -1,0 +1,8 @@
+<nav>
+    <a routerLink="/">Home</a>
+    <div class="cart-button">
+        <button routerLink="/cart">
+            Cart ({{ cartCount$ | async }})
+        </button>
+    </div>
+</nav>

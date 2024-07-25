@@ -1,0 +1,12 @@
+<!-- src/app/components/intro/intro.component.html -->
+<div class="container">
+    <div class="product-card" *ngFor="let product of products$ | async">
+        <img src="https://via.placeholder.com/150" alt="{{product.name}}">
+        <h3>{{product.name}}</h3>
+        <p>${{product.price}}</p>
+        <button (click)="addToCart(product)">Add to Cart</button>
+    </div>
+</div>
+<div class="navigation">
+  
+</div>

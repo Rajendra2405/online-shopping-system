@@ -1,0 +1,74 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Apple iPhone 13",
+            "price": 799,
+            "imageUrl": "https://example.com/images/iphone13.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 2,
+            "name": "Samsung Galaxy S21",
+            "price": 699,
+            "imageUrl": "https://example.com/images/galaxyS21.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 3,
+            "name": "Google Pixel 6",
+            "price": 599,
+            "imageUrl": "https://example.com/images/pixel6.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 4,
+            "name": "OnePlus 9 Pro",
+            "price": 969,
+            "imageUrl": "https://example.com/images/oneplus9pro.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 5,
+            "name": "Sony WH-1000XM4 Headphones",
+            "price": 349,
+            "imageUrl": "https://example.com/images/sony-headphones.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 6,
+            "name": "Apple MacBook Pro 16-inch",
+            "price": 2399,
+            "imageUrl": "https://example.com/images/macbookpro.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 7,
+            "name": "Dell XPS 13",
+            "price": 999,
+            "imageUrl": "https://example.com/images/dellxps13.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 8,
+            "name": "Asus ROG Zephyrus G14",
+            "price": 1449,
+            "imageUrl": "https://example.com/images/rogzephyrus.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 9,
+            "name": "Amazon Echo Dot (4th Gen)",
+            "price": 49,
+            "imageUrl": "https://example.com/images/echodot.jpg",
+            "quantity": 1
+        },
+        {
+            "id": 10,
+            "name": "Google Nest Hub",
+            "price": 89,
+            "imageUrl": "https://example.com/images/nesthub.jpg",
+            "quantity": 1
+        }
+    ]
+}
