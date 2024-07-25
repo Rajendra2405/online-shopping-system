@@ -1,6 +1,9 @@
-<div class="list-container">
-    <h2>Cart Items</h2>
-    <button routerLink="/">Back to Products</button>
+<div class="checkout-container">
+    <div class="title-container">
+        <h2>Cart Items</h2>
+        <button routerLink="/">Back to Products</button>
+    </div>
+    
     <ng-container *ngIf="cart$ | async as cartItems; else noItems">
         <table *ngIf="cartItems.length > 0; else noItems">
             <thead>
