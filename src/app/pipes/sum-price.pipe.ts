@@ -6,7 +6,7 @@ import { Product } from '../model/product.model';
   name: 'sumPrice',
 })
 export class SumPricePipe implements PipeTransform {
-  transform(cartItems: Product[]): number {
-    return cartItems.reduce((total, item) => total + item.price, 0);
+  transform(cartItems:any): number {
+    return cartItems.price;
   }
 }
