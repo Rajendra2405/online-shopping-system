@@ -22,7 +22,7 @@
                             <button (click)="increaseQuantity(item)">+</button>
                         </div>
                     </td>
-                    <td>${{ item.price * item.quantity }}</td>
+                    <td>${{ item | sumPrice }}</td>
                     <td>
                         <button (click)="removeFromCart(item.id)">Remove</button>
                     </td>
