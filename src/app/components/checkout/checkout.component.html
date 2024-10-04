@@ -1,5 +1,8 @@
 <div class="checkout-container">
-    <h2>Checkout</h2>
+    <div class="title-container">
+        <h2>Checkout</h2>
+        <button class="proceed-button" routerLink="/">Back to Products</button>
+    </div>
     <div *ngIf="paymentCompleted; else cartContent">
         <p class="payment-done-message">Payment Done! Thank you for your purchase.</p>
     </div>

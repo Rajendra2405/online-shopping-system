@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #45a049;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: ;
 }
 
 .card {
@@ -81,4 +81,11 @@ button:hover {
 
 .checkout-summary h2 {
   margin: 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between; /* Positions items at opposite ends */
+  align-items: center; /* Vertically centers items */
+  padding: 10px; /* Adds some padding */
 }
